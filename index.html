@@ -95,8 +95,14 @@
         </div>
         <p>&copy; 2023 Lemart Nutrition. Todos los derechos reservados.</p>
     </footer>
-    <a href="#" class="back-to-top">
+    <a href="javascript:void(0);" onclick="scrollToTop()" class="back-to-top">
         <button>Volver al inicio</button>
     </a>
+    <script>
+        // Función para hacer scroll hacia el encabezado de la página
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>    
 </body>
 </html>
