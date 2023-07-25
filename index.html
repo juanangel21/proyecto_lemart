@@ -95,7 +95,7 @@
         </div>
         <p>&copy; 2023 Lemart Nutrition. Todos los derechos reservados.</p>
     </footer>
-    <a href="javascript:void(0);" onclick="scrollToTop()" class="back-to-top">
+    <a href="#" class="back-to-top" id="backToTop">
         <button>Volver al inicio</button>
     </a>
     <script>
@@ -103,14 +103,16 @@
         function scrollToTop() {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
-        window.onscroll = function() {
+
+        // Mostrar el botón al hacer scroll
+        window.addEventListener('scroll', function() {
             var backToTopButton = document.getElementById("backToTop");
-            if (window.pageYOffset > 300) {
+            if (window.scrollY > 300) {
                 backToTopButton.style.display = "block";
             } else {
                 backToTopButton.style.display = "none";
             }
-        };
-    </script>    
+        });
+    </script>
 </body>
 </html>
