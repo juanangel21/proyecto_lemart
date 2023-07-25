@@ -60,36 +60,6 @@ button {
     display: none;
 }
 
-/* Estilos adicionales para el botón, si lo deseas */
-.back-to-top button {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-/* Mostrar el botón al hacer scroll */
-body {
-    scroll-behavior: smooth; /* Desplazamiento suave */
-}
-
-/* Mostrar el botón al hacer scroll */
-/* Ajusta el valor de scroll para que el botón aparezca en el momento deseado */
-/* En este ejemplo, el botón aparecerá cuando el scroll sea mayor a 300px */
-/* Puedes ajustar este valor según tus necesidades */
-@media screen and (min-height: 300px) {
-    body {
-        padding-bottom: 100px; /* Espacio para evitar que el botón se superponga al contenido */
-    }
-
-    .back-to-top {
-        display: block;
-    }
-}
-
-
 footer {
     background-color: #333;
     color: #fff;
